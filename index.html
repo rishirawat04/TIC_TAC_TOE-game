@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+
+<body class="m-0 p-0">
+    <audio src="Game.mp3" autoplay controls  class="absolute"  loop  >
+        
+    </audio>
+
+    <nav class="flex justify-start p-2 font-serif text-xl bg-black text-white absolute z-50">
+        It's time to kick ass and chew bubble gum… ...
+    </nav>
+    <div class="bg-img   relative">
+        <img class="h-screen w-screen" src="tic-bg.jpg" alt="">
+
+        <div class="container p-2 top-20 absolute  md:flex justify-center items-center h-96 ">
+
+
+            <div
+                class="left w-fit sm:w-fit bg-red-400 grid grid-cols-3 grid-rows-3 text-center bg-opacity-30 text-3xl  ml-auto mr-auto mb-8">
+
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 h-14 border-t-0 border-l-0 border-b-0">
+                    <span class="boxtext"></span></div>
+                <div class="  box hover:bg-red-500 hover:bg-opacity-50  border-black w-20 h-14 border-t-0 border-0 ">
+                    <span class="boxtext"></span></div>
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 h-14 border-t-0 border-r-0 border-b-0">
+                    <span class="boxtext"></span></div>
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 h-14 border-l-0 border-b-0">
+                    <span class="boxtext"></span></div>
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 border-l-0 border-r-0 border-b-0 h-14 ">
+                    <span class="boxtext"></span>
+                </div>
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 h-14 border-r-0 border-b-0">
+                    <span class="boxtext"></span></div>
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 h-14 border-b-0 border-l-0">
+                    <span class="boxtext"></span></div>
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 h-14 border-b-0 border-l-0 border-r-0">
+                    <span class="boxtext"></span></div>
+                <div
+                    class="  box border-2  hover:bg-red-500 hover:bg-opacity-50 border-black w-20 h-14 border-b-0 border-r-0 ">
+                    <span class="boxtext"></span></div>
+            </div>
+            <div
+                class="right  border-2 hover:-translate-y-4  ml-auto mr-auto border-purple-500 rounded-md p-3 bg-purple-500 bg-opacity-30 h-56 flex flex-col items-center">
+                <h1 class="text-4xl">Welcome to Tic Tac Toe</h1>
+                <div>
+                    <div class="animated relative flex">
+                        <div class="anime  transition-transform mr-8">
+                            <img class="h-32 w-0  ease-in-out duration-300 " src="gojo.gif" alt="">
+                        </div>
+                        <div class="won-sec">
+                            <span class="info  mt-4 text-xl  flex flex-col items-center ">Turn for <span
+                                    class="text-4xl">X</span></span>
+                            <button id="reset"
+                                class="p-1 mt-2 hover:bg-purple-800 ease-in duration-200 border-purple-900 text-lg font-serif border-2 rounded-md w-20">
+                                Reset</button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="tic-tac.js"></script>
+    </div>
+</body>
+
+</html>
